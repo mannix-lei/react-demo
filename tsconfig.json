@@ -3,7 +3,7 @@
     "target": "ES2016",
     "module": "esnext",
     "jsx": "preserve",
-    "rootDir": "src",
+    "rootDir": "./src",
     "isolatedModules": true,
     "strict": true,
     "noImplicitAny": true,
@@ -32,6 +32,6 @@
     "noEmit": true
   },
   "include": [
-    "src"
+    "src/**/*"
   ]
 }
