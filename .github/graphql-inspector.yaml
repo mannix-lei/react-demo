@@ -1,3 +1,2 @@
-{ ? // ...
-      "graphql-inspector"
-    : { 'branch': 'master', 'schema': 'schema.graphql' } }
+schema: 'schema.graphql'
+branch: 'master'
