@@ -9,17 +9,16 @@
     right: 0;
 }
 
-.bodyfilter {
-    background: url('../static/img/mountain.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+.glass {
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
+    width: 100%;
+    height: 100%;
 }
 
 .login {
@@ -40,6 +39,10 @@
         .ant-checkbox + span {
             color: #fff;
         }
+
+        .ant-btn-primary {
+            width: 100%;
+        }
     }
 }
 
@@ -57,7 +60,10 @@
     height: 42px;
 
     :global {
-        button, html [type="button"], [type="reset"], [type="submit"] {
+        button,
+        html [type='button'],
+        [type='reset'],
+        [type='submit'] {
             width: 10em;
             height: 3em;
             font-size: 1em;

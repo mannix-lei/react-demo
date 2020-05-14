@@ -5,11 +5,8 @@ import { Button, Form, Input, Checkbox } from 'antd';
 export const Login = () => {
     const [loginForm] = Form.useForm();
     const layout = {
-        labelCol: { span: 8 },
-        wrapperCol: { span: 16 },
-    };
-    const tailLayout = {
-        wrapperCol: { offset: 8, span: 16 },
+        labelCol: { span: 0 },
+        wrapperCol: { span: 0 },
     };
     const [loginVisible, setloginVisible] = useState(false);
 
@@ -25,7 +22,8 @@ export const Login = () => {
     };
     return (
         <div className={style.body}>
-            {loginVisible ? (
+            <div className={ loginVisible ? style.glass : ''}></div>
+            {!loginVisible ? (
                 <div className={style.btnGroup}>
                     <Button onClick={handleOk}>Sign In</Button>
                     <Button>Sign Up</Button>
@@ -42,26 +40,24 @@ export const Login = () => {
                         onFinish={login}
                     >
                         <Form.Item
-                            label="Username"
                             name="username"
                             rules={[{ required: true, message: 'Please input your username!' }]}
                         >
-                            <Input />
+                            <Input placeholder="Please input your username" />
                         </Form.Item>
 
                         <Form.Item
-                            label="Password"
                             name="password"
                             rules={[{ required: true, message: 'Please input your password!' }]}
                         >
-                            <Input.Password />
+                            <Input.Password placeholder="Please input your password" />
                         </Form.Item>
 
-                        <Form.Item {...tailLayout} name="remember" valuePropName="checked">
+                        <Form.Item name="remember" valuePropName="checked">
                             <Checkbox>Remember me</Checkbox>
                         </Form.Item>
 
-                        <Form.Item {...tailLayout}>
+                        <Form.Item>
                             <Button type="primary" htmlType="submit">
                                 Submit
                             </Button>
