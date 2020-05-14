@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f60da21.chunk.css",
+    "main.js": "/static/js/main.4bee650e.chunk.js",
+    "main.js.map": "/static/js/main.4bee650e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.916fb653.js",
+    "runtime-main.js.map": "/static/js/runtime-main.916fb653.js.map",
+    "static/css/2.d7262850.chunk.css": "/static/css/2.d7262850.chunk.css",
+    "static/js/2.68db3e80.chunk.js": "/static/js/2.68db3e80.chunk.js",
+    "static/js/2.68db3e80.chunk.js.map": "/static/js/2.68db3e80.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fc78c0f58fe757ae7faeda42f75f4e4c.js": "/precache-manifest.fc78c0f58fe757ae7faeda42f75f4e4c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d7262850.chunk.css.map": "/static/css/2.d7262850.chunk.css.map",
+    "static/css/main.3f60da21.chunk.css.map": "/static/css/main.3f60da21.chunk.css.map",
+    "static/js/2.68db3e80.chunk.js.LICENSE.txt": "/static/js/2.68db3e80.chunk.js.LICENSE.txt",
+    "static/media/login.module.scss": "/static/media/mountain.312ef451.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.916fb653.js",
+    "static/css/2.d7262850.chunk.css",
+    "static/js/2.68db3e80.chunk.js",
+    "static/css/main.3f60da21.chunk.css",
+    "static/js/main.4bee650e.chunk.js"
+  ]
+}
